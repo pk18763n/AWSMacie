@@ -13,8 +13,7 @@ for finding in paginator.paginate(maxResults=50):
     for findingid in finding['findingIds']:
         a=my_list.append(findingid)
         a=findingid
-#print(my_list)
-#print(type(my_list))
+        
 for i in my_list:
     response = client.get_findings(findingIds=[i])
     print(response)
